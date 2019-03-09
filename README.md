@@ -16,7 +16,7 @@
  ### Node.js setup  
  After following the installer instructions to install node, navigate to the project directory:  
    
- `npm install`  
+ `$ npm install`  
    
  This will install all the node modules and dependencies according to the package.json file.  
    
@@ -37,10 +37,10 @@ This project uses npm start scripts to run the project under two modes: **dev** 
 To start the mongodb service, the reccomended command is `mongod`, _however_ systemctl can be used on unix systems that use systemd.  
   
 On unix:  
-`systemctl start mongodb.service`  
+`$ systemctl start mongodb.service`  
   
 On windows / using mongod:  
-`mongod --dbpath [Your /data/db path]/data/db`  
+`$ mongod --dbpath [Your /data/db path]/data/db`  
   
 This will start the mongodb servie in the background.
   
@@ -52,15 +52,16 @@ To start the Node.js server, we will use npm start scripts.
   
 **Usage**  
   
-`npm run [CONFIG] [PORT] [COOKIE-SECRET]`  
-`where,`    
-`[CONFIG] is one of: dev, and release`  
-`[PORT] is the port you wish to run the server on,`    
-`[COOKIE-SECRET] is the secret with which the cookies sent to your clients will be encrypted with.`  
-  
+```
+ $ npm run [CONFIG] [PORT] [COOKIE-SECRET]  
+ where,    
+ [CONFIG] is one of: dev, and release  
+ [PORT] is the port you wish to run the server on,   
+ [COOKIE-SECRET] is the secret with which the cookies sent to your clients will be encrypted with.  
+ ```  
     
 To run on a local machine:  
-  `npm run dev 8080 mysecret`  
+  `$ npm run dev 8080 mysecret`  
     
 Open a web browser on localhost, port of your choice, and bob's your uncle.  
 For any questions/queries, contact the contributors or raise an issue.  
