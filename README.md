@@ -2,8 +2,8 @@
  A web based portal for students to check their marks and access resources, circulars and other notifications pertaining to college.  
  
  ###### Created by:  
- * Sanjitha Singh
- * Amit Kumar Gupta  
+ * [Sanjitha Singh](https://github.com/SanjithaSingh)
+ * [Amit Kumar Gupta](https://github.com/Amit-Kumar-G/)
  
  ***NOTE: This project is under the MIT open source license. For more information, see [LICENSE](./LICENSE)***
  
@@ -54,9 +54,9 @@ To start the Node.js server, we will use npm start scripts.
   
 `npm run [CONFIG] [PORT] [COOKIE-SECRET]`  
 `where,`    
-`CONFIG is one of: dev, and release`  
-`PORT is the port you wish to run the server on,`    
-`COOKIE-SECRET is the secret with which the cookies sent to your clients will be encrypted with.`  
+`[CONFIG] is one of: dev, and release`  
+`[PORT] is the port you wish to run the server on,`    
+`[COOKIE-SECRET] is the secret with which the cookies sent to your clients will be encrypted with.`  
   
     
 To run on a local machine:  
