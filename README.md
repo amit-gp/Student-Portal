@@ -10,6 +10,7 @@
  ### Requirements
  Node.js LTS (10.15.3) : https://nodejs.org/en/  
  MongoDB (4.0.6) : https://www.mongodb.com/   
+   
  ***NOTE:** MongoDB atlas may be used as well, however this document uses the community server edition hosted on a local machine.*     
    
  ### Node.js setup  
@@ -18,6 +19,7 @@
  `npm install`  
    
  This will install all the node modules and dependencies according to the package.json file.  
+   
  ***NOTE:** This project does not upload local node-modules, and any deprecated packages will have to be fixed by the contribitors. For more, see [issues](https://github.com/Amit-Kumar-G/Student-Portal/issues)*
    
 This project uses npm start scripts to run the project under two modes: **dev** and **release**.  
@@ -26,7 +28,8 @@ This project uses npm start scripts to run the project under two modes: **dev** 
  After following the installer instructions to install mongo, navigate to any directory of your choice:  
    Create the folder **/data/db** and note the path.  
      
- ***NOTE: If on a local machine, it is reccomended to create /data/db in C:/ drive or ~/ (home) drive on windows or unix systems respectively.***  
+ ***NOTE: If on a local machine, it is reccomended to create /data/db in C:/ drive or ~/ (home) drive on windows or unix systems respectively.***    
+   
   ***NOTE: When deploying remotely on a unix server, it is compulsary to create /data/db in the '/' (root) directory. You will need admin privilages for this, or use 'fakeroot'. Contact your system administrator for the same.***  
     
 
@@ -49,15 +52,15 @@ To start the Node.js server, we will use npm start scripts.
   
 **Usage**  
   
-`npm run [CONFIG] [PORT] [COOKIE-SECRET]  
-where, 
-CONFIG is one of: dev, and release
-PORT is the port you wish to run the server on,
-COOKIE-SECRET is the secret with which the cookies sent to your clients will be encrypted with.
-`  
+`npm run [CONFIG] [PORT] [COOKIE-SECRET]`  
+`where,`    
+`CONFIG is one of: dev, and release`  
+`PORT is the port you wish to run the server on,`    
+`COOKIE-SECRET is the secret with which the cookies sent to your clients will be encrypted with.`  
   
-  To run on a local machine:  
-  `npm run dev`  
+    
+To run on a local machine:  
+  `npm run dev 8080 mysecret`  
     
 Open a web browser on localhost, port of your choice, and bob's your uncle.  
 For any questions/queries, contact the contributors or raise an issue.  
