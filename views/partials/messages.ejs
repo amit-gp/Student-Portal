@@ -1,0 +1,24 @@
+<!--For Pushing errors as a partial to login and register-->
+<% if (typeof errors != 'undefined') { %>
+    <% errors.forEach(function(error) { %>
+        <!--FRONT-END: USE 'DISMISSABLE ALERTS HERE'-->
+        <%= error.msg %>
+    <% }); %>
+<% } %>
+
+<!--For flash messages-->
+
+<% if (success_msg != '') { %>
+    <!--FRONT-END: USE 'DISMISSABLE ALERTS HERE'-->
+        <%= success_msg %>
+<% } %>
+
+<% if (error_msg != '') { %>
+    <!--FRONT-END: USE 'DISMISSABLE ALERTS HERE'-->
+    <%= error_msg %>
+<% } %>
+
+<% if (error != '') { %>
+    <!--FRONT-END: USE 'DISMISSABLE ALERTS HERE'-->
+    <%= error %>
+<% } %>

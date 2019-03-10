@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+
+    <h1>Login</h1>
+
+    <div>
+        <% include ./partials/messages %>
+    </div>
+
+    <form action="/users/login" method="post">
+        <label >Email:</label>
+        <input type="text" name="email">
+        <br>
+        <label>Password</label>
+        <input type="password" name="password">
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
