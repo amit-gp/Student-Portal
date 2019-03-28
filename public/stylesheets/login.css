@@ -1,0 +1,30 @@
+.form-signin {
+  width: 100%;
+  padding: 30px;
+  margin: 10% auto;
+}
+
+.bg-image {
+  background-image: url('../resources/login.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+.login,
+.image {
+  min-height: 100vh;
+}
+
+.submit-btn{
+  background-color: #181819;
+  color: white;
+}
+.not-now-btn{
+  background-color: #8B8B8C;
+  color: white;
+}

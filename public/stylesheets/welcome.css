@@ -1,0 +1,39 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body {
+    background: url("../resources/landing-page-img.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+
+.content{
+    text-align: center;
+    color: white;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+hr {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+h1, h4{
+    background-color: black;
+}
+
+.btn-light{
+    text-shadow: none;
+}
+.signup-btn{
+    text-decoration: none;
+    color: #212529;
+}
+
+.signup-btn:hover{
+    text-decoration: none;
+    color: #212529;
+}

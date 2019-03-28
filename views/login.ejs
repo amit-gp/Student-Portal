@@ -1,24 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body>
 
-    <h1>Login</h1>
+<body>
 
     <div>
         <% include ./partials/messages %>
     </div>
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <div class="d-none d-md-flex col-md-4 col-lg-7 bg-image"></div>
+            <div class="col-md-8 col-lg-5">
+                <div class="login d-flex align-items-center py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 col-lg-8 mx-auto">
+                                <div>
+                                    <div>
+                                        <form action="/users/login" method="post">
+                                            <h3>Login</h3>
+                                            <div class="form-group">
+                                                <label for="email-id">Email Address</label>
+                                                <input type="text" id="email-id" name="email" class="form-control"
+                                                    placeholder="Enter your email" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password-input">Password</label>
+                                                <input type="password" id="password-input" name="password"
+                                                    class="form-control" placeholder="Enter Password" required>
+                                            </div>
+                                            <input class="btn btn-block submit-btn" type="submit" value="Login">
+                                            <a href="welcome.html" class="btn btn-block not-now-btn">Not
+                                                Now</a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <form action="/users/login" method="post">
-        <label >Email:</label>
-        <input type="text" name="email">
-        <br>
-        <label>Password</label>
-        <input type="password" name="password">
-        <input type="submit" value="Login">
-    </form>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
