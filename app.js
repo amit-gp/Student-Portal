@@ -48,7 +48,7 @@ app.set ('view engine', 'ejs');
 // Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
 app.use (expressSession({
 
     secret: session_secret,
