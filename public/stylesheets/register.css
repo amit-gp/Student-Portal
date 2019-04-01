@@ -1,0 +1,11 @@
+
+.bg-image {
+    background-image: url('../resources/register.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+    h3{
+        font-size : 3rem;
+    }
+  
