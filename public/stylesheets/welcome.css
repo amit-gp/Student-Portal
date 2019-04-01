@@ -3,7 +3,7 @@ html, body{
     width: 100%;
 }
 body {
-    background: url("../resources/landing-page-img.jpg");
+    background: url("/resources/landing-page-img.jpg");
     background-size: cover;
     background-position: center; 
 }

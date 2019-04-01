@@ -1,6 +1,6 @@
 
 .bg-image {
-    background-image: url('../resources/register.jpg');
+    background-image: url('/resources/register.jpg');
     background-size: cover;
     background-position: center;
   }

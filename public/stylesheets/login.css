@@ -5,7 +5,7 @@
 }
 
 .bg-image {
-  background-image: url('../resources/login.jpg');
+  background-image: url('/resources/login.jpg');
   background-size: cover;
   background-position: center;
 }
