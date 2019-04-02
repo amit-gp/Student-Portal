@@ -2,7 +2,12 @@
 <% if (typeof errors != 'undefined') { %>
     <% errors.forEach(function(error) { %>
         <!--FRONT-END: USE 'DISMISSABLE ALERTS HERE'-->
-        <%= error.msg %>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <%= error.msg %>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
     <% }); %>
 <% } %>
 
@@ -10,15 +15,32 @@
 
 <% if (success_msg != '') { %>
     <!--FRONT-END: USE 'DISMISSABLE ALERTS HERE'-->
-        <%= success_msg %>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <%= success_msg %>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
 <% } %>
 
 <% if (error_msg != '') { %>
     <!--FRONT-END: USE 'DISMISSABLE ALERTS HERE'-->
-    <%= error_msg %>
+    
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <%= error_msg %>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
 <% } %>
 
 <% if (error != '') { %>
     <!--FRONT-END: USE 'DISMISSABLE ALERTS HERE'-->
-    <%= error %>
+    
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <%= error %>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
 <% } %>

@@ -12,9 +12,7 @@
 
 <body>
 
-    <div>
-        <% include ./partials/messages %>
-    </div>
+
     <div class="container-fluid">
         <div class="row no-gutter">
             <div class="d-none d-md-flex col-md-4 col-lg-7 bg-image"></div>
@@ -27,6 +25,9 @@
                                     <div>
                                         <form action="/users/register" method="POST">
                                             <h3 class="mb-4">Register</h3>
+                                            <div>
+                                                <% include ./partials/messages %>
+                                            </div>
                                             <div class="form-group">
                                                 <label for="username">Username</label>
                                                 <input type="text" id="username" name="name" class="form-control"

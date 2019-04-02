@@ -14,7 +14,7 @@ module.exports = {
             return next();
         }
 
-        req.flash('success_msg', 'You are already logged in, logout first.');
+        req.flash('error_msg', 'You are already logged in, logout first.');
         res.redirect('/dashboard');
     }
 };
