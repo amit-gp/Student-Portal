@@ -4,6 +4,7 @@ const path = require('path');
 const PORT = process.argv[2];
 const indexRoutes = require('./routes/index');
 const userRoutes = require('./routes/users');
+const notificationRoutes = require('./routes/notifications');
 // const expressLayouts = require('express-ejs-layouts');
 const expressSession = require('express-session');
 const flash = require('connect-flash');
@@ -73,7 +74,9 @@ app.use(function(req, res, next) {
 
 // Routes
 app.use ('/', indexRoutes);
+app.use ('/notifications', notificationRoutes);
 app.use ('/users', userRoutes);
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
