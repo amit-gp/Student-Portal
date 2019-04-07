@@ -6,10 +6,10 @@ router.get('/',isAlreadyLoggedIn, (req, res) => {
     res.render('welcome');
 });
 
-router.get('/dashboard', ensureAuthenticated, (req,res) => {
-    res.render('dashboard', {
-        name : req.user.name
-    });
-})
+// router.get('/dashboard', (req,res) => {
+//     res.render('dashboard', {
+//         name : req.user.name
+//     });
+// })
 
 module.exports = router;

@@ -69,9 +69,19 @@
         <% include ./partials/messages %>
         <br>
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-            <h1 class="h2">Hi, User</h1>
+            <h1 class="h2">Hi, <%= user.name %></h1>
         </div>
-        <div class="card p-3">
+
+        <% notificationList.forEach(notification => { %>
+            <div class="card p-3">
+                <h5 class="card-title"><%= notification.title %></h5>
+                <p class="card-text"><%= notification.body %></p>
+                <a href="#" class="btn btn-dark read-more-btn">Read More</a>
+            </div>
+        <% }); %>
+        <!--
+            TEMPLATE
+            <div class="card p-3">
             <h5 class="card-title">Notification - 1</h5>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nam nihil quae ut, dolore
                 modi nobis
@@ -80,33 +90,7 @@
                 tenetur numquam laborum aliquam accusamus esse fuga possimus quis.</p>
             <a href="#" class="btn btn-dark read-more-btn">Read More</a>
         </div>
-        <div class="card p-3">
-            <h5 class="card-title">Notification - 2</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nam nihil quae ut, dolore
-                modi nobis
-                tempora et dignissimos assumenda voluptate pariatur provident quod nemo reprehenderit quisquam est
-                perspiciatis architecto quidem, beatae enim possimus excepturi. Alias, facilis! Et omnis at, nulla
-                tenetur numquam laborum aliquam accusamus esse fuga possimus quis.</p>
-            <a href="#" class="btn btn-dark read-more-btn">Read More</a>
-        </div>
-        <div class="card p-3">
-            <h5 class="card-title">Notification - 3</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nam nihil quae ut, dolore
-                modi nobis
-                tempora et dignissimos assumenda voluptate pariatur provident quod nemo reprehenderit quisquam est
-                perspiciatis architecto quidem, beatae enim possimus excepturi. Alias, facilis! Et omnis at, nulla
-                tenetur numquam laborum aliquam accusamus esse fuga possimus quis.</p>
-            <a href="#" class="btn btn-dark read-more-btn">Read More</a>
-        </div>
-        <div class="card p-3">
-            <h5 class="card-title">Notification - 4</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nam nihil quae ut, dolore
-                modi nobis
-                tempora et dignissimos assumenda voluptate pariatur provident quod nemo reprehenderit quisquam est
-                perspiciatis architecto quidem, beatae enim possimus excepturi. Alias, facilis! Et omnis at, nulla
-                tenetur numquam laborum aliquam accusamus esse fuga possimus quis.</p>
-            <a href="#" class="btn btn-dark read-more-btn">Read More</a>
-        </div>
+        -->
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

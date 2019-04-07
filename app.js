@@ -4,13 +4,14 @@ const path = require('path');
 const PORT = process.argv[2];
 const indexRoutes = require('./routes/index');
 const userRoutes = require('./routes/users');
-const notificationRoutes = require('./routes/notifications');
+const dashboardRoutes = require('./routes/dashboard');
 // const expressLayouts = require('express-ejs-layouts');
 const expressSession = require('express-session');
 const flash = require('connect-flash');
 const cookieParser = require ('cookie-parser');
 const passport = require('passport');
 const bodyParser = require ('body-parser');
+const {ensureAuthenticated, isAlreadyLoggedIn} = require('./configs/auth');
 const mongoose = require ('mongoose');
 const session_secret = process.argv[3];
 
@@ -74,7 +75,7 @@ app.use(function(req, res, next) {
 
 // Routes
 app.use ('/', indexRoutes);
-app.use ('/notifications', notificationRoutes);
+app.use ('/dashboard',ensureAuthenticated, dashboardRoutes);
 app.use ('/users', userRoutes);
 
 
