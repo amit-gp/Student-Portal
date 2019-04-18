@@ -12,7 +12,6 @@
 
 <body>
 
-
     <div class="container-fluid">
         <div class="row no-gutter">
             <div class="d-none d-md-flex col-md-4 col-lg-7 bg-image"></div>
@@ -28,32 +27,80 @@
                                             <div>
                                                 <% include ./partials/messages %>
                                             </div>
-                                            <div class="form-group">
-                                                <label for="username">Username</label>
-                                                <input type="text" id="username" name="name" class="form-control"
-                                                    placeholder="Enter your username" required>
+                                            div class="form-group">
+
+                                            <div class="row">
+                                                <div class="col">
+                                                    <label for="first-name">First Name</label>
+                                                    <input type="text" class="form-control" name="first-name"
+                                                        id="first-name" placeholder="First name">
+                                                </div>
+                                                <div class="col">
+                                                    <label for="last-name">Last Name</label>
+                                                    <input type="text" class="form-control" name="last-name"
+                                                        id="last-name" placeholder="Last name">
+                                                </div>
                                             </div>
-                                            <div class="form-group">
-                                                <label for="email-id">Email Address</label>
-                                                <input type="email" id="email-id" name="email" class="form-control"
-                                                    placeholder="Enter your email" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="password-input">Password</label>
-                                                <input type="password" id="password-input" name="password"
-                                                    class="form-control" placeholder="Enter your password" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="password-retype">Confirm Password</label>
-                                                <input type="password" id="password-retype" name="password2"
-                                                    class="form-control" placeholder="Enter your password again"
-                                                    required>
-                                            </div>
-                                            <input class="btn btn-block submit-btn mt-5" type="submit" value="Register">
-                                            <a href="/" class="btn btn-block not-now-btn">Not
-                                                Now</a>
-                                        </form>
                                     </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="usn">USN</label>
+                                                <input type="text" class="form-control" name="usn" id="usn"
+                                                    placeholder="USN">
+                                            </div>
+                                            <div class="col">
+                                                <label for="semester">Semester</label>
+                                                <select class="form-control" id="semester" name="semester">
+                                                    <option>I</option>
+                                                    <option>II</option>
+                                                    <option>III</option>
+                                                    <option>IV</option>
+                                                    <option>V</option>
+                                                    <option>VI</option>
+                                                    <option>VII</option>
+                                                    <option>VIII</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Department">Department</label>
+                                        <select class="form-control" id="department" name="department">
+                                            <option>Computer Science And Engineering</option>
+                                            <option>Electronics and Communication Engineering</option>
+                                            <option>Electrical engineering</option>
+                                            <option>Mechanical Engineering</option>
+                                            <option>Information Science</option>
+                                            <option>Civil Engineering</option>
+                                            <option>Chemical Engineering</option>
+                                            <option>Aeronautical Engineering</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="username">Username</label>
+                                        <input type="text" id="username" name="name" class="form-control"
+                                            placeholder="Enter your username" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email-id">Email Address</label>
+                                        <input type="email" id="email-id" name="email" class="form-control"
+                                            placeholder="Enter your email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password-input">Password</label>
+                                        <input type="password" id="password-input" name="password" class="form-control"
+                                            placeholder="Enter your password" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password-retype">Confirm Password</label>
+                                        <input type="password" id="password-retype" name="password2"
+                                            class="form-control" placeholder="Enter your password again" required>
+                                    </div>
+                                    <input class="btn btn-block submit-btn mt-5" type="submit" value="Register">
+                                    <a href="/" class="btn btn-block not-now-btn">Not
+                                        Now</a>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -61,6 +108,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
