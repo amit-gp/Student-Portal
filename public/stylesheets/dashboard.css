@@ -62,3 +62,7 @@ body {
   .read-more-btn{
       max-width: 20%;
   }
+
+  .greeting{
+    text-transform: capitalize;
+  }

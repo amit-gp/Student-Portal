@@ -1,0 +1,12 @@
+.table td, .table th{
+    padding: 1.75rem;
+}
+main{
+    position: relative;
+    left: 20%;
+}
+
+.name-header{
+    border-bottom: 5px solid black;
+    padding-right: 27%;
+}
