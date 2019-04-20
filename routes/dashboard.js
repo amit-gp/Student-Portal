@@ -10,11 +10,16 @@ router.get('/', (req, res) => {
     res.redirect('/dashboard/notifications');
 });
 
+router.get('/college-notifications', (req, res) => {
+
+    res.redirect('/dashboard/notifications');
+});
+
 router.get('/notifications', (req, res) => {
 
     Notification.find({level:'college'}, (err, notifications) => {
         //console.log(users);
-        res.render('dashboard-notifications', {
+        res.render('college-notifications', {
             user : req.user,
             notificationList: notifications  
         });
@@ -22,11 +27,13 @@ router.get('/notifications', (req, res) => {
 
 });
 
+
+
 router.get('/department-notifications', (req,res) => {
 
     Notification.find({level:'department'}, (err, notifications) => {
         //console.log(users);
-        res.render('dashboard-notifications', {
+        res.render('department-notifications', {
             user : req.user,
             notificationList: notifications  
         });

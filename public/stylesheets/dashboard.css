@@ -7,16 +7,53 @@ body {
     height: 16px;
     vertical-align: text-bottom;
   }
-/*
+
+  .sidenav {
+
+    height: 100%;
+  width: 178px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgb(17, 17, 17); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+
+/* /*
  * Sidebar
- */
+ 
 
  .sidebar {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
-    z-index: -100; /* Behind the navbar */
+    z-index: -100; /* Behind the navbar *//*
     padding: 0;
     box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
   }
@@ -24,11 +61,11 @@ body {
   .sidebar-sticky {
     position: -webkit-sticky;
     position: sticky;
-    top: 48px; /* Height of navbar */
+    top: 48px; /* Height of navbar *//*
     height: calc(100vh - 48px);
     padding-top: .5rem;
     overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. *//*
   }
   
   .sidebar .nav-link {
@@ -65,4 +102,4 @@ body {
 
   .greeting{
     text-transform: capitalize;
-  }
+  } */
