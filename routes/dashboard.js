@@ -3,6 +3,7 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
 const Notification = require('../schemas/NotificationModel');
+const User = require('../schemas/UserModel');
 
 router.get('/', (req, res) => {
 
@@ -34,7 +35,14 @@ router.get('/department-notifications', (req,res) => {
 
 router.get('/user-details', (req, res) => {
 
-    res.render('user-details');
+    const email = req.user.email;
+    User.findOne({email: email}, (err, user) => {
+        //console.log(user);
+        res.render('user-details', {
+            user: user
+        }); 
+    })
+    
 });
 
 router.get('/test', (req, res) => {

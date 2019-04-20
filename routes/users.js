@@ -10,15 +10,16 @@ router.get('/login', isAlreadyLoggedIn, (req, res) => {
 })
 
 router.get('/register',isAlreadyLoggedIn, (req, res) => {
+    console.log(req.body);
     res.render ('register');
 })
 
 router.post('/register', (req, res) => {
 
-    const { name, email, password, password2 } = req.body;
+    const { firstname, lastname, usn, semester,department, email, password, password2 } = req.body;
     let errors = [];
   
-    if (!name || !email || !password || !password2) {
+    if (!email || !password || !password2 || !firstname || !lastname || !usn || !semester || !department) {
       errors.push({ msg: 'Please enter all fields' });
     }
   
@@ -33,10 +34,13 @@ router.post('/register', (req, res) => {
     if (errors.length > 0) {
       res.render('register', {
         errors,
-        name,
-        email,
-        password,
-        password2
+        firstname,
+            lastname,
+            usn,
+            semester,
+            department,
+            password,
+            email
       });
     } else {
       User.findOne({ email: email }).then(user => {
@@ -44,16 +48,23 @@ router.post('/register', (req, res) => {
           errors.push({ msg: 'Email already exists' });
           res.render('register', {
             errors,
-            name,
-            email,
+            firstname,
+            lastname,
+            usn,
+            semester,
+            department,
             password,
-            password2
+            email
           });
         } else {
           const newUser = new User({
-            name,
-            email,
-            password
+            firstname,
+            lastname,
+            usn,
+            semester,
+            department,
+            password,
+            email
           });
   
           bcrypt.genSalt(10, (err, salt) => {

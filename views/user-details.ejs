@@ -65,28 +65,32 @@
 
             <main role="main" class="col-md-6 col-lg-6 pt-3">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-5">
-                    <h1 class="display-4 name-header">Firstname Lastname</h1>
+                    <h1 class="display-4 name-header"><%= user.firstname %> <%= user.lastname %></h1>
                 </div>
                 <table class="table h5">
                     <tr>
-                        <th>Username</th>
-                        <td>username</td>
+                        <th>First Name</th>
+                        <td><%= user.firstname %></td>
+                    </tr>
+                    <tr>
+                        <th>Lastname Name</th>
+                        <td><%= user.lastname %></td>
                     </tr>
                     <tr>
                         <th>Email address</th>
-                        <td>email</td>
+                        <td><%= user.email %></td>
                     </tr>
                     <tr>
                         <th>USN</th>
-                        <td>usn</td>
+                        <td><%= user.usn %></td>
                     </tr>
                     <tr>
                         <th>Semester</th>
-                        <td>sem</td>
+                        <td><%= user.semester %></td>
                     </tr>
                     <tr class="border-bottom">
                         <th>Department</th>
-                        <td>department</td>
+                        <td><%= user.department %></td>
                     </tr>
 
                 </table>
