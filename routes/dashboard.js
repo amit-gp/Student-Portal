@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 
 router.get('/notifications', (req, res) => {
 
-    Notification.find({}, (err, notifications) => {
+    Notification.find({level:'college'}, (err, notifications) => {
         //console.log(users);
         res.render('dashboard-notifications', {
             user : req.user,
@@ -19,6 +19,22 @@ router.get('/notifications', (req, res) => {
         });
     });
 
+});
+
+router.get('/department-notifications', (req,res) => {
+
+    Notification.find({level:'department'}, (err, notifications) => {
+        //console.log(users);
+        res.render('dashboard-notifications', {
+            user : req.user,
+            notificationList: notifications  
+        });
+    });
+});
+
+router.get('/user-details', (req, res) => {
+
+    res.render('user-details');
 });
 
 router.get('/test', (req, res) => {
