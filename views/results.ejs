@@ -3,13 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>User Profile</title>
+    <title>College Notifications</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/stylesheets/dashboard.css">
-    <!-- <link rel="stylesheet" href="/stylesheets/user-details.css"> -->
 
 </head>
 
@@ -27,7 +26,7 @@
                     <a class="nav-link" href="#"><i class="fas fa-user-circle pr-2"></i></i>Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"></i>Sign Out</a>
+                    <a class="nav-link" href="/users/logout"></i>Sign Out</a>
                 </li>
             </ul>
         </div>
@@ -50,12 +49,12 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/dashboard/user-details">
+                            <a class="nav-link" href="/dashboard/user-details">
                                 <i class="fas fa-users-cog pr-2 pt-2"></i>User Profile
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/dashboard/">
+                            <a class="nav-link active" href="/dashboard/user-details">
                                 <i class="fas fa-graduation-cap pr-2 pt-2"></i>Results
                             </a>
                         </li>
@@ -69,39 +68,70 @@
                 </div>
             </nav>
             <main role="main" class="col-md-9 ml-sm-auto pt-3 px-4">
-                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-5">
-                    <h1 class="display-4 name-header"><%= user.firstname %> <%= user.lastname %></h1>
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Results</h1>
                 </div>
-                <table class="table h5">
-                    <tr>
-                        <th>First Name</th>
-                        <td><%= user.firstname %></td>
-                    </tr>
-                    <tr>
-                        <th>Lastname Name</th>
-                        <td><%= user.lastname %></td>
-                    </tr>
-                    <tr>
-                        <th>Email address</th>
-                        <td><%= user.email %></td>
-                    </tr>
-                    <tr>
-                        <th>USN</th>
-                        <td><%= user.usn %></td>
-                    </tr>
-                    <tr>
-                        <th>Semester</th>
-                        <td><%= user.semester %></td>
-                    </tr>
-                    <tr class="border-bottom">
-                        <th>Department</th>
-                        <td><%= user.department %></td>
-                    </tr>
-
+                <table class="table table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">Sl No</th>
+                            <th scope="col">Course Code</th>
+                            <th scope="col">Course</th>
+                            <th scope="col">Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>CS61</td>
+                            <td>Internet and Web Technology</td>
+                            <td>8</td>
+                        </tr>
+                        <<tr>
+                            <th scope="row">2</th>
+                            <td>CS62</td>
+                            <td>Complier Design</td>
+                            <td>8</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>CS63</td>
+                                <td>Computer Graphics</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>CS64</td>
+                                <td>Cloud and Big Data</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>CS65</td>
+                                <td>Software Architecture and Design Patterns</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>CS66</td>
+                                <td>Software Testing</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="4" class="sgpa"></th>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="3" class="sgpa">SGPA(feel free to remove this)</th>
+                                <td>8</td>
+                            </tr>
+                    </tbody>
                 </table>
             </main>
-
         </div>
+        </main>
+
+    </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

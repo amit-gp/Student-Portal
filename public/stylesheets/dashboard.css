@@ -1,5 +1,6 @@
 body {
   font-size: .875rem;
+  height:100%;
 }
 
 
@@ -11,10 +12,12 @@ body {
   max-width: 20%;
 }
 
+
 .sidebar{
   
   position: sticky;
   font-size: 1rem;
+  overflow-x: hidden; 
 }
 
 .sidebar .nav-link {
@@ -29,10 +32,27 @@ body {
 
 .sidebar-sticky{
   position:fixed;
+  height: 100%;
+  left: 0;
+  width:300px;
+  background-color: rgb(248, 249, 250);
+  
 }
 .sidebar .nav-link.active {
   color: #007bff;
 }
+
+.return-to-btn{
+  max-width: 30%;
+}
+hr{
+  margin:1rem 0 0 0;
+}
+
+.sgpa{
+text-align: center;
+}
+
 .greeting{
   text-transform: capitalize;
 }

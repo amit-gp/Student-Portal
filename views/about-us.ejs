@@ -3,13 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>User Profile</title>
+    <title>College Notifications</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/stylesheets/dashboard.css">
-    <!-- <link rel="stylesheet" href="/stylesheets/user-details.css"> -->
 
 </head>
 
@@ -27,7 +26,7 @@
                     <a class="nav-link" href="#"><i class="fas fa-user-circle pr-2"></i></i>Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"></i>Sign Out</a>
+                    <a class="nav-link" href="/users/logout"></i>Sign Out</a>
                 </li>
             </ul>
         </div>
@@ -50,7 +49,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/dashboard/user-details">
+                            <a class="nav-link" href="/dashboard/user-details">
                                 <i class="fas fa-users-cog pr-2 pt-2"></i>User Profile
                             </a>
                         </li>
@@ -61,7 +60,7 @@
                         </li>
                         <hr>
                         <li class="nav-item border-top">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link active" href="#">
                                 About Us
                             </a>
                         </li>
@@ -69,33 +68,33 @@
                 </div>
             </nav>
             <main role="main" class="col-md-9 ml-sm-auto pt-3 px-4">
-                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-5">
-                    <h1 class="display-4 name-header"><%= user.firstname %> <%= user.lastname %></h1>
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-1 mb-5 border-bottom">
+                    <h1 class="display-4 name-header">About Us</h1>
                 </div>
+                <p class="h3 pb-4">This Online Student Portal was made as a part of our coursework for Internet and Web
+                    Technologies.
+                </p>
                 <table class="table h5">
                     <tr>
-                        <th>First Name</th>
-                        <td><%= user.firstname %></td>
+                        <th>
+                            Amit Kumar Gupta
+                        </th>
+                        <td>1DS16CS704</td>
                     </tr>
                     <tr>
-                        <th>Lastname Name</th>
-                        <td><%= user.lastname %></td>
+                        <th>Arvind Babu</th>
+                        <td>1DS16CS706</td>
                     </tr>
                     <tr>
-                        <th>Email address</th>
-                        <td><%= user.email %></td>
-                    </tr>
-                    <tr>
-                        <th>USN</th>
-                        <td><%= user.usn %></td>
-                    </tr>
-                    <tr>
-                        <th>Semester</th>
-                        <td><%= user.semester %></td>
+                        <th>Sanjitha Singh</th>
+                        <td>1DS16CS739</td>
                     </tr>
                     <tr class="border-bottom">
-                        <th>Department</th>
-                        <td><%= user.department %></td>
+                        <th>Saragalla Ramya</th>
+                        <td>
+                            1DS16CS741
+                        </td>
                     </tr>
 
                 </table>
