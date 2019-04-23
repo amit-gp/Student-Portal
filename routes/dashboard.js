@@ -27,6 +27,16 @@ router.get('/notifications', (req, res) => {
 
 });
 
+router.get('/results', (req, res) => {
+
+    res.render('results');
+});
+
+router.get('/about-us', (req, res) => {
+
+    res.render('about-us');
+});
+
 
 
 router.get('/department-notifications', (req,res) => {
