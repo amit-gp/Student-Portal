@@ -10,9 +10,21 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/stylesheets/dashboard.css">
 
+    <script>
+        function generateTableValues() {
+            var table = document.getElementById('marks-table');
+            var sum = 0;
+            for (i = 1; i < 6; i++) {
+                var element = Math.floor(Math.random() * (10 - 5 + 1)) + 5;
+                table.rows[i].cells[3].innerHTML = element;
+                sum += element;
+            }
+            document.getElementById('sgpa').innerHTML = (sum / 6).toFixed(2);
+        }
+    </script>
 </head>
 
-<body>
+<body onload="generateTableValues()">
     <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
         <a class="navbar-brand" href="/dashboard"><i class="fas fa-user-graduate mr-3"></i>Online Student Portal</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -23,7 +35,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-user-circle pr-2"></i></i>Profile</a>
+                    <a class="nav-link" href="/dashboard/user-details"><i
+                            class="fas fa-user-circle pr-2"></i></i>Profile</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/users/logout"></i>Sign Out</a>
@@ -72,7 +85,7 @@
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
                     <h1 class="h2">Results</h1>
                 </div>
-                <table class="table table-striped table-dark">
+                <table class="table table-striped table-dark" id="marks-table">
                     <thead>
                         <tr>
                             <th scope="col">Sl No</th>
@@ -93,38 +106,38 @@
                             <td>CS62</td>
                             <td>Complier Design</td>
                             <td>8</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>CS63</td>
-                                <td>Computer Graphics</td>
-                                <td>8</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>CS64</td>
-                                <td>Cloud and Big Data</td>
-                                <td>8</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>CS65</td>
-                                <td>Software Architecture and Design Patterns</td>
-                                <td>8</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>CS66</td>
-                                <td>Software Testing</td>
-                                <td>8</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" colspan="4" class="sgpa"></th>
-                            </tr>
-                            <tr>
-                                <th scope="row" colspan="3" class="sgpa">SGPA(feel free to remove this)</th>
-                                <td>8</td>
-                            </tr>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>CS63</td>
+                            <td>Computer Graphics</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>CS64</td>
+                            <td>Cloud and Big Data</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>CS65</td>
+                            <td>Software Architecture and Design Patterns</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>CS66</td>
+                            <td>Software Testing</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" colspan="4" class="sgpa"></th>
+                        </tr>
+                        <tr>
+                            <th scope="row" colspan="3" class="sgpa">SGPA</th>
+                            <td id="sgpa">8</td>
+                        </tr>
                     </tbody>
                 </table>
             </main>
