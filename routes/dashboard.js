@@ -17,11 +17,13 @@ router.get('/college-notifications', (req, res) => {
 
 router.get('/notifications', (req, res) => {
 
-    Notification.find({level:'college'}, (err, notifications) => {
+    Notification.find({
+        level: 'college'
+    }, (err, notifications) => {
         //console.log(users);
         res.render('college-notifications', {
-            user : req.user,
-            notificationList: notifications  
+            user: req.user,
+            notificationList: notifications
         });
     });
 
@@ -39,13 +41,15 @@ router.get('/about-us', (req, res) => {
 
 
 
-router.get('/department-notifications', (req,res) => {
+router.get('/department-notifications', (req, res) => {
 
-    Notification.find({level:'department'}, (err, notifications) => {
+    Notification.find({
+        level: 'department'
+    }, (err, notifications) => {
         //console.log(users);
         res.render('department-notifications', {
-            user : req.user,
-            notificationList: notifications  
+            user: req.user,
+            notificationList: notifications
         });
     });
 });
@@ -53,13 +57,15 @@ router.get('/department-notifications', (req,res) => {
 router.get('/user-details', (req, res) => {
 
     const email = req.user.email;
-    User.findOne({email: email}, (err, user) => {
+    User.findOne({
+        email: email
+    }, (err, user) => {
         //console.log(user);
         res.render('user-details', {
             user: user
-        }); 
+        });
     })
-    
+
 });
 
 router.get('/test', (req, res) => {
@@ -70,6 +76,21 @@ router.get('/test', (req, res) => {
 router.get('/hello', (req, res) => {
 
     res.send('Hello');
+})
+
+router.get('/notifications/:id', function (req, res) {
+    console.log(req.params.id)
+    Notification.findById(req.params.id, function (err, foundNotification) {
+        if (err) {
+            console.log(err)
+            res.redirect('back')
+        } else {
+            console.log(foundNotification)
+            res.render("show", {
+                notification: foundNotification
+            })
+        }
+    })
 })
 
 module.exports = router;

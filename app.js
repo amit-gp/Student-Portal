@@ -8,50 +8,55 @@ const dashboardRoutes = require('./routes/dashboard');
 // const expressLayouts = require('express-ejs-layouts');
 const expressSession = require('express-session');
 const flash = require('connect-flash');
-const cookieParser = require ('cookie-parser');
+const cookieParser = require('cookie-parser');
 const passport = require('passport');
-const bodyParser = require ('body-parser');
-const {ensureAuthenticated, isAlreadyLoggedIn} = require('./configs/auth');
-const mongoose = require ('mongoose');
+const bodyParser = require('body-parser');
+const {
+    ensureAuthenticated,
+    isAlreadyLoggedIn
+} = require('./configs/auth');
+const mongoose = require('mongoose');
 const session_secret = process.argv[3];
 
 require('./configs/passport-config')(passport);
 
 if (session_secret === undefined) {
-    console.log (`ERROR: Session secret has not been not specified.\nUsage: npm run [CONFIG],[session-secret]
+    console.log(`ERROR: Session secret has not been not specified.\nUsage: npm run [CONFIG],[session-secret]
     `);
     process.exit();
 }
 
 if (PORT === undefined) {
-    console.log (`ERROR: PORT has not been not specified.\nUsage: npm run [CONFIG],[session-secret]
+    console.log(`ERROR: PORT has not been not specified.\nUsage: npm run [CONFIG],[session-secret]
     `);
     process.exit();
 }
 
 const mongooseOptions = {
-    useNewUrlParser : true
+    useNewUrlParser: true
 }
 
 mongoose.connect('mongodb://localhost:27017/studentportal', mongooseOptions, (err) => {
 
     if (err) {
-        console.log ('Error connecting to the MongoDB database... terminating now.');
+        console.log('Error connecting to the MongoDB database... terminating now.');
         process.exit();
     }
-    console.log ('Connected to MongoDB successfully.');
+    console.log('Connected to MongoDB successfully.');
 });
 
 // EJS
 //app.use (expressLayouts);
 app.set('views', path.join(__dirname, 'views'));
-app.set ('view engine', 'ejs');
+app.set('view engine', 'ejs');
 
 // Middleware
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({
+    extended: true
+}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '/public')));
-app.use (expressSession({
+app.use(expressSession({
 
     secret: session_secret,
     saveUninitialized: true,
@@ -66,17 +71,17 @@ app.use(passport.session());
 app.use(flash());
 
 // Global variables
-app.use(function(req, res, next) {
-  res.locals.success_msg = req.flash('success_msg');
-  res.locals.error_msg = req.flash('error_msg');
-  res.locals.error = req.flash('error');
-  next();
+app.use(function (req, res, next) {
+    res.locals.success_msg = req.flash('success_msg');
+    res.locals.error_msg = req.flash('error_msg');
+    res.locals.error = req.flash('error');
+    next();
 });
 
 // Routes
-app.use ('/', indexRoutes);
-app.use ('/dashboard',ensureAuthenticated, dashboardRoutes);
-app.use ('/users', userRoutes);
+app.use('/', indexRoutes);
+app.use('/dashboard', dashboardRoutes);
+app.use('/users', userRoutes);
 
 
 // catch 404 and forward to error handler
@@ -84,18 +89,22 @@ app.use(function (req, res, next) {
     var err = new Error('Not Found');
     err.status = 404;
     next(err);
-  });
-  
-  // error handler
-  app.use(function (err, req, res, next) {
+});
+
+// error handler
+app.use(function (err, req, res, next) {
     // set locals, only providing error in development
     res.locals.message = err.message;
     res.locals.error = req.app.get('env') === 'development' ? err : {};
-  
+
     // render the error page
     res.status(err.status || 500);
     res.render('error');
-  });
-  
+});
+
+var port = process.env.PORT || 3000;
+app.listen(port, function () {
+    console.log('Server Has Started!');
+});
 
 app.listen(PORT, console.log(`Server started on port ${PORT}`));

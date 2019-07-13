@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Department Notifications</title>
+    <title>College Notifications</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/stylesheets/dashboard.css">
+
 </head>
 
 <body>
@@ -44,7 +45,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/dashboard/department-notifications">
+                            <a class="nav-link" href="/dashboard/department-notifications">
                                 <i class="fas fa-building pr-2 pt-2"></i> Department Notifications
                             </a>
                         </li>
@@ -60,7 +61,7 @@
                         </li>
                         <hr>
                         <li class="nav-item border-top">
-                            <a class="nav-link" href="/dashboard/about-us">
+                            <a class="nav-link active" href="/dashboard/about-us">
                                 About Us
                             </a>
                         </li>
@@ -68,31 +69,20 @@
                 </div>
             </nav>
             <main role="main" class="col-md-9 ml-sm-auto pt-3 px-4">
-                <!--Used to push flash messages, like 'passwords don't match' and other validation-->
-                <br>
-                <% include ./partials/messages %>
-                <br>
-                <div
-                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-                    <h1 class="h2 greeting">Department of <%= user.department %></h1>
+                <div class="card">
+                    <!-- <div
+                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-1 mb-2 border-bottom">
+                        
+                    </div> -->
+                    <h3 class="card-title text-center py-2 border-bottom"><%=notification.title%></h3>
+                    <p class="card-body">
+                        <%=notification.body%>
+                    </p>
                 </div>
 
-                <% notificationList.forEach(notification => { %>
-                <div class="card p-3">
-                    <h5 class="card-title"><%= notification.title %></h5>
-                    <p class="card-text"><%= notification.body.substring(0,300) %>...</p>
-                    <a href="/dashboard/notifications/<%= notification._id%>" class="btn btn-dark read-more-btn">Read
-                        More</a>
-                </div>
-                <% }); %>
+            </main>
 
         </div>
-        </main>
-
-        <div class="col-md-4 black-side">
-
-        </div>
-    </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
