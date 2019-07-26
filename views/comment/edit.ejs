@@ -69,55 +69,31 @@
                 </div>
             </nav>
             <main role="main" class="col-md-9 ml-sm-auto pt-3 px-4">
-                <% include partials/messages %>
-                <div class="card">
-                    <!-- <div
-                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-1 mb-2 border-bottom">
-                        
-                    </div> -->
-                    <h3 class="card-title text-center py-2 border-bottom"><%=notification.title%></h3>
-                    <p class="card-body">
-                        <%=notification.body%>
-                    </p>
-                    <div class="card-footer text-muted text-right">
-                        Posted: <%= moment(notification.createdAt).fromNow() %>
+                <div class="container ">
+                    <div class="row justify-content-center">
+                        <span class="display-4 mb-3">Edit your comment</span>
                     </div>
 
-                </div>
-                <div class="clearfix my-1">
-                    <a href="/dashboard/notifications/<%=notification._id%>/comments/new"
-                        class="btn btn-dark read-more-btn float-right mr-3">Share your thoughts</a>
-                </div>
-                <div>
+                    <div class="row justify-content-center">
 
-                </div>
-                <%if(notification.comments.length>0){%>
-                <div class="card card-outline-secondary m-3 p-3">
-                    <% notification.comments.forEach(function(comment){%>
-                    <div class="card-block mb-3">
-                        <h6 class="card-header"><%=comment.author.firstName%> <%=comment.author.lastName%>
-                            <span class="text-muted float-right"><%= moment(comment.createdAt).fromNow() %></span> </h6>
-                        <div class="card-block border">
-                            <p class="card-text py-2 px-3"><%=comment.text%></p>
+                        <div>
+                            <form
+                                action="/dashboard/notifications/<%=notification._id %>/comments/<%=comment._id%>?_method=PUT"
+                                method="post">
+                                <div class="form-group">
+                                    <textarea class="form-control" name="comment[text]" cols="80"
+                                        rows="7"><%=comment.text%></textarea>
 
-                            <!-- edit and delete options -->
-                            <%if(currentUser && comment.author.id.equals(currentUser._id)){%>
-                            <div class="card-block card-text px-3 py-2 border-top">
-                                <a href="/dashboard/notifications/<%=notification._id%>/comments/<%=comment._id%>/edit"
-                                    class="card-link">Edit</a>
-                                <form
-                                    action="/dashboard/notifications/<%=notification._id %>/comments/<%=comment._id%>?_method=DELETE"
-                                    method="post" class="delete-comment-form">
-                                    <input class="delete-btn card-link" type="submit" value="Delete">
-                                </form>
-
-                            </div>
-                            <% }%>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-dark btn-block" value="Edit">
+                                </div>
+                            </form>
+                            <a href="/dashboard/notifications/<%=notification._id %>">Go back</a>
                         </div>
+
                     </div>
-                    <% })%>
                 </div>
-                <% }%>
             </main>
 
         </div>

@@ -79,8 +79,8 @@ router.get('/hello', (req, res) => {
 })
 
 router.get('/notifications/:id', function (req, res) {
-    console.log(req.params.id)
-    Notification.findById(req.params.id, function (err, foundNotification) {
+
+    Notification.findById(req.params.id).populate("comments").exec(function (err, foundNotification) {
         if (err) {
             console.log(err)
             res.redirect('back')

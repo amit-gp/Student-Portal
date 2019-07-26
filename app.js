@@ -5,12 +5,14 @@ const PORT = process.argv[2];
 const indexRoutes = require('./routes/index');
 const userRoutes = require('./routes/users');
 const dashboardRoutes = require('./routes/dashboard');
+const commentRoutes = require('./routes/comment')
 // const expressLayouts = require('express-ejs-layouts');
 const expressSession = require('express-session');
 const flash = require('connect-flash');
 const cookieParser = require('cookie-parser');
 const passport = require('passport');
 const bodyParser = require('body-parser');
+const methodOverride = require("method-override");
 const {
     ensureAuthenticated,
     isAlreadyLoggedIn
@@ -45,10 +47,16 @@ mongoose.connect('mongodb://localhost:27017/studentportal', mongooseOptions, (er
     console.log('Connected to MongoDB successfully.');
 });
 
+//Method overriding for PUT and DELETE requests
+app.use(methodOverride("_method"));
+
 // EJS
 //app.use (expressLayouts);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
+//Moment js
+app.locals.moment = require('moment');
 
 // Middleware
 app.use(express.urlencoded({
@@ -75,12 +83,14 @@ app.use(function (req, res, next) {
     res.locals.success_msg = req.flash('success_msg');
     res.locals.error_msg = req.flash('error_msg');
     res.locals.error = req.flash('error');
+    res.locals.currentUser = req.user;
     next();
 });
 
 // Routes
 app.use('/', indexRoutes);
-app.use('/dashboard', dashboardRoutes);
+app.use('/dashboard', ensureAuthenticated, dashboardRoutes);
+app.use('/dashboard/notifications/:id/comments', commentRoutes);
 app.use('/users', userRoutes);
 
 
@@ -100,11 +110,6 @@ app.use(function (err, req, res, next) {
     // render the error page
     res.status(err.status || 500);
     res.render('error');
-});
-
-var port = process.env.PORT || 3000;
-app.listen(port, function () {
-    console.log('Server Has Started!');
 });
 
 app.listen(PORT, console.log(`Server started on port ${PORT}`));
