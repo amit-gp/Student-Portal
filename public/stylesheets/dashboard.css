@@ -1,8 +1,12 @@
-body {
-  font-size: .875rem;
+html {
   height: 100%;
 }
 
+body {
+  font-size: 0.875rem;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
 
 .card {
   margin-bottom: 3em;
@@ -12,9 +16,7 @@ body {
   max-width: 20%;
 }
 
-
 .sidebar {
-
   position: sticky;
   font-size: 1rem;
   overflow-x: hidden;
@@ -26,7 +28,7 @@ body {
 }
 
 .sidebar .nav-link:hover {
-  color: #B3B3B3;
+  color: #b3b3b3;
   transition: 0.3s;
 }
 
@@ -36,7 +38,6 @@ body {
   left: 0;
   width: 300px;
   background-color: rgb(248, 249, 250);
-
 }
 
 .sidebar .nav-link.active {
@@ -68,4 +69,33 @@ hr {
 
 .delete-comment-form {
   display: inline;
+}
+
+.container-fluid-row {
+  height: 100%;
+}
+
+.container-row {
+  height: 100%;
+  background-color: #ebecf1;
+}
+
+.sidebar-container {
+  background-color: #206a5d;
+}
+
+.navbar-container {
+  background-color: #1f4068;
+}
+
+.sidebar-container .nav-link {
+  color: #ebecf1d8;
+  font-size: 1.2rem;
+  border-bottom: 0.5px solid #74a29a;
+  box-shadow: 1px #74a29a;
+}
+
+.sidebar-container .nav-link.active {
+  color: #ebecf1;
+  font-weight: bold !important;
 }

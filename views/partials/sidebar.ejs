@@ -1,0 +1,36 @@
+<nav class="col-md-3 d-none d-md-block sidebar px-0 sidebar-container">
+  <div>
+    <ul class="nav flex-column">
+      <div class="p-2 m-2"></div>
+      <li class="nav-item">
+        <a
+          class="nav-link pb-3 font-weight-light <%= page==="college-notifications" ? "active" : '' %>"
+          href="/dashboard/college-notifications"
+        >
+          <i class="fas fa-university pr-4 pt-2"></i>College Notifications
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link pb-3 font-weight-light <%= page==="department-notifications" ? "active" : '' %>"
+          href="/dashboard/department-notifications"
+        >
+          <i class="fas fa-building pr-4 pt-2"></i> Department Notifications
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link pb-3 font-weight-light <%= page==="user-details" ? "active" : '' %>"
+          href="/dashboard/user-details"
+        >
+          <i class="fas fa-users-cog pr-4 pt-2"></i>User Profile
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link pb-3 font-weight-light <%= page==="results" ? "active" : '' %>" href="/dashboard/results">
+          <i class="fas fa-graduation-cap pr-4 pt-2"></i>Results
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -23,17 +23,18 @@ router.get("/notifications", (req, res) => {
       res.render("college-notifications", {
         user: req.user,
         notificationList: notifications,
+        page: "college-notifications",
       });
     }
   );
 });
 
 router.get("/results", (req, res) => {
-  res.render("results");
+  res.render("results", { user: req.user, page: "results" });
 });
 
 router.get("/about-us", (req, res) => {
-  res.render("about-us");
+  res.render("about-us", { user: req.user, page: "about-us" });
 });
 
 router.get("/department-notifications", (req, res) => {
@@ -46,6 +47,7 @@ router.get("/department-notifications", (req, res) => {
       res.render("department-notifications", {
         user: req.user,
         notificationList: notifications,
+        page: "department-notifications",
       });
     }
   );
@@ -61,6 +63,7 @@ router.get("/user-details", (req, res) => {
       //console.log(user);
       res.render("user-details", {
         user: user,
+        page: "user-details",
       });
     }
   );
