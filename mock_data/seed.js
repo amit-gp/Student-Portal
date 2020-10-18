@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
-const staffData = require("./mock_data/mock_staff_data.json");
-const studentData = require("./mock_data/mock_student_data.json");
-const User = require("./schemas/UserModel");
+const staffData = require("./mock_staff_data.json");
+const studentData = require("./mock_student_data.json");
+const User = require("../schemas/UserModel");
 const fs = require("fs");
 const insertData = async (model, data) => {
   try {
