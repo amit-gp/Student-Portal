@@ -1,0 +1,902 @@
+[
+  {
+    "firstName": "Coraline",
+    "lastName": "Ong",
+    "email": "cong0@nasa.gov",
+    "semester": 7,
+    "department": "Electrical Engineering",
+    "userId": "1DS16EE868",
+    "password": "521493"
+  },
+  {
+    "firstName": "Michal",
+    "lastName": "Kemer",
+    "email": "mkemer1@unesco.org",
+    "semester": 2,
+    "department": "Computer Science",
+    "userId": "1DS17CS972",
+    "password": "855890"
+  },
+  {
+    "firstName": "Cody",
+    "lastName": "Aleshintsev",
+    "email": "caleshintsev2@delicious.com",
+    "semester": 4,
+    "department": "Computer Science",
+    "userId": "1DS16CS320",
+    "password": "381286"
+  },
+  {
+    "firstName": "Erskine",
+    "lastName": "McKeachie",
+    "email": "emckeachie3@is.gd",
+    "semester": 6,
+    "department": "Electrical Engineering",
+    "userId": "1DS14EE961",
+    "password": "347061"
+  },
+  {
+    "firstName": "Elle",
+    "lastName": "Gheeraert",
+    "email": "egheeraert4@ning.com",
+    "semester": 3,
+    "department": "Civil Engineering",
+    "userId": "1DS13CE624",
+    "password": "844053"
+  },
+  {
+    "firstName": "Hannah",
+    "lastName": "Leadston",
+    "email": "hleadston5@arizona.edu",
+    "semester": 6,
+    "department": "Civil Engineering",
+    "userId": "1DS16CE149",
+    "password": "560077"
+  },
+  {
+    "firstName": "Juditha",
+    "lastName": "Casperri",
+    "email": "jcasperri6@army.mil",
+    "semester": 7,
+    "department": "Electrical Engineering",
+    "userId": "1DS15EE938",
+    "password": "697683"
+  },
+  {
+    "firstName": "Riva",
+    "lastName": "Uzelli",
+    "email": "ruzelli7@home.pl",
+    "semester": 1,
+    "department": "Civil Engineering",
+    "userId": "1DS19CE751",
+    "password": "231332"
+  },
+  {
+    "firstName": "Beniamino",
+    "lastName": "Scolding",
+    "email": "bscolding8@a8.net",
+    "semester": 6,
+    "department": "Computer Science",
+    "userId": "1DS10CS251",
+    "password": "306094"
+  },
+  {
+    "firstName": "Raymond",
+    "lastName": "Milley",
+    "email": "rmilley9@canalblog.com",
+    "semester": 4,
+    "department": "Information Science",
+    "userId": "1DS18IS732",
+    "password": "686954"
+  },
+  {
+    "firstName": "Conrado",
+    "lastName": "O'Dee",
+    "email": "codeea@taobao.com",
+    "semester": 2,
+    "department": "Information Science",
+    "userId": "1DS19IS280",
+    "password": "394371"
+  },
+  {
+    "firstName": "Gwynne",
+    "lastName": "Folger",
+    "email": "gfolgerb@quantcast.com",
+    "semester": 1,
+    "department": "Civil Engineering",
+    "userId": "1DS15CE357",
+    "password": "731221"
+  },
+  {
+    "firstName": "Towney",
+    "lastName": "Christophle",
+    "email": "tchristophlec@fda.gov",
+    "semester": 3,
+    "department": "Mechanical Engineering",
+    "userId": "1DS17ME255",
+    "password": "624167"
+  },
+  {
+    "firstName": "Ingaborg",
+    "lastName": "Ceschelli",
+    "email": "iceschellid@sohu.com",
+    "semester": 6,
+    "department": "Electrical Engineering",
+    "userId": "1DS18EE236",
+    "password": "575613"
+  },
+  {
+    "firstName": "Shantee",
+    "lastName": "Danilowicz",
+    "email": "sdanilowicze@wordpress.org",
+    "semester": 5,
+    "department": "Mechanical Engineering",
+    "userId": "1DS16ME154",
+    "password": "888990"
+  },
+  {
+    "firstName": "Kory",
+    "lastName": "Danihelka",
+    "email": "kdanihelkaf@unesco.org",
+    "semester": 3,
+    "department": "Electrical Engineering",
+    "userId": "1DS16EE362",
+    "password": "928936"
+  },
+  {
+    "firstName": "Blakeley",
+    "lastName": "Adrien",
+    "email": "badrieng@weibo.com",
+    "semester": 1,
+    "department": "Civil Engineering",
+    "userId": "1DS13CE359",
+    "password": "968426"
+  },
+  {
+    "firstName": "Gregor",
+    "lastName": "Chadney",
+    "email": "gchadneyh@china.com.cn",
+    "semester": 3,
+    "department": "Civil Engineering",
+    "userId": "1DS19CE508",
+    "password": "529489"
+  },
+  {
+    "firstName": "Ringo",
+    "lastName": "Brunel",
+    "email": "rbruneli@diigo.com",
+    "semester": 3,
+    "department": "Mechanical Engineering",
+    "userId": "1DS13ME362",
+    "password": "366865"
+  },
+  {
+    "firstName": "Vivia",
+    "lastName": "Levet",
+    "email": "vlevetj@omniture.com",
+    "semester": 7,
+    "department": "Civil Engineering",
+    "userId": "1DS13CE306",
+    "password": "867019"
+  },
+  {
+    "firstName": "Vale",
+    "lastName": "Cockayne",
+    "email": "vcockaynek@comcast.net",
+    "semester": 7,
+    "department": "Computer Science",
+    "userId": "1DS10CS496",
+    "password": "237534"
+  },
+  {
+    "firstName": "Crista",
+    "lastName": "Bunyan",
+    "email": "cbunyanl@nasa.gov",
+    "semester": 4,
+    "department": "Information Science",
+    "userId": "1DS12IS215",
+    "password": "642482"
+  },
+  {
+    "firstName": "Madelon",
+    "lastName": "MacTerlagh",
+    "email": "mmacterlaghm@vk.com",
+    "semester": 1,
+    "department": "Electrical Engineering",
+    "userId": "1DS19EE236",
+    "password": "554367"
+  },
+  {
+    "firstName": "Jemmie",
+    "lastName": "Tocqueville",
+    "email": "jtocquevillen@hhs.gov",
+    "semester": 8,
+    "department": "Information Science",
+    "userId": "1DS12IS172",
+    "password": "445573"
+  },
+  {
+    "firstName": "Lazarus",
+    "lastName": "Nerval",
+    "email": "lnervalo@omniture.com",
+    "semester": 4,
+    "department": "Electronics and Communication",
+    "userId": "1DS15EC445",
+    "password": "873520"
+  },
+  {
+    "firstName": "Sayer",
+    "lastName": "Durtnel",
+    "email": "sdurtnelp@dailymotion.com",
+    "semester": 7,
+    "department": "Computer Science",
+    "userId": "1DS14CS726",
+    "password": "875784"
+  },
+  {
+    "firstName": "Lari",
+    "lastName": "Soames",
+    "email": "lsoamesq@ezinearticles.com",
+    "semester": 2,
+    "department": "Civil Engineering",
+    "userId": "1DS18CE802",
+    "password": "795888"
+  },
+  {
+    "firstName": "Hubert",
+    "lastName": "Tolomelli",
+    "email": "htolomellir@webmd.com",
+    "semester": 5,
+    "department": "Computer Science",
+    "userId": "1DS13CS529",
+    "password": "223398"
+  },
+  {
+    "firstName": "Art",
+    "lastName": "Markushkin",
+    "email": "amarkushkins@yolasite.com",
+    "semester": 7,
+    "department": "Information Science",
+    "userId": "1DS11IS935",
+    "password": "942092"
+  },
+  {
+    "firstName": "Oralla",
+    "lastName": "Cockcroft",
+    "email": "ocockcroftt@i2i.jp",
+    "semester": 5,
+    "department": "Electronics and Communication",
+    "userId": "1DS16EC999",
+    "password": "573929"
+  },
+  {
+    "firstName": "Edd",
+    "lastName": "Pykerman",
+    "email": "epykermanu@home.pl",
+    "semester": 6,
+    "department": "Civil Engineering",
+    "userId": "1DS15CE315",
+    "password": "205827"
+  },
+  {
+    "firstName": "Merrily",
+    "lastName": "Poat",
+    "email": "mpoatv@bluehost.com",
+    "semester": 4,
+    "department": "Civil Engineering",
+    "userId": "1DS16CE156",
+    "password": "997047"
+  },
+  {
+    "firstName": "Renae",
+    "lastName": "Raffon",
+    "email": "rraffonw@mit.edu",
+    "semester": 4,
+    "department": "Computer Science",
+    "userId": "1DS18CS688",
+    "password": "200371"
+  },
+  {
+    "firstName": "Augy",
+    "lastName": "Gosnoll",
+    "email": "agosnollx@cbc.ca",
+    "semester": 7,
+    "department": "Information Science",
+    "userId": "1DS15IS262",
+    "password": "404177"
+  },
+  {
+    "firstName": "Mariel",
+    "lastName": "Calcott",
+    "email": "mcalcotty@icq.com",
+    "semester": 8,
+    "department": "Electronics and Communication",
+    "userId": "1DS12EC838",
+    "password": "461393"
+  },
+  {
+    "firstName": "Benita",
+    "lastName": "Kembery",
+    "email": "bkemberyz@dropbox.com",
+    "semester": 2,
+    "department": "Civil Engineering",
+    "userId": "1DS19CE730",
+    "password": "973933"
+  },
+  {
+    "firstName": "Gun",
+    "lastName": "McKerton",
+    "email": "gmckerton10@bing.com",
+    "semester": 7,
+    "department": "Civil Engineering",
+    "userId": "1DS15CE376",
+    "password": "709726"
+  },
+  {
+    "firstName": "Arly",
+    "lastName": "Jacobson",
+    "email": "ajacobson11@telegraph.co.uk",
+    "semester": 5,
+    "department": "Electronics and Communication",
+    "userId": "1DS12EC687",
+    "password": "245209"
+  },
+  {
+    "firstName": "Dorisa",
+    "lastName": "Merrikin",
+    "email": "dmerrikin12@wikia.com",
+    "semester": 1,
+    "department": "Computer Science",
+    "userId": "1DS18CS210",
+    "password": "639736"
+  },
+  {
+    "firstName": "Hadlee",
+    "lastName": "Follen",
+    "email": "hfollen13@sourceforge.net",
+    "semester": 5,
+    "department": "Electrical Engineering",
+    "userId": "1DS11EE222",
+    "password": "456870"
+  },
+  {
+    "firstName": "Lorettalorna",
+    "lastName": "Dayne",
+    "email": "ldayne14@amazon.co.jp",
+    "semester": 3,
+    "department": "Civil Engineering",
+    "userId": "1DS19CE435",
+    "password": "135747"
+  },
+  {
+    "firstName": "Alexandra",
+    "lastName": "Sigart",
+    "email": "asigart15@diigo.com",
+    "semester": 6,
+    "department": "Information Science",
+    "userId": "1DS16IS791",
+    "password": "416917"
+  },
+  {
+    "firstName": "Bill",
+    "lastName": "Packman",
+    "email": "bpackman16@miitbeian.gov.cn",
+    "semester": 1,
+    "department": "Civil Engineering",
+    "userId": "1DS18CE160",
+    "password": "342201"
+  },
+  {
+    "firstName": "Aurlie",
+    "lastName": "Favey",
+    "email": "afavey17@arstechnica.com",
+    "semester": 7,
+    "department": "Mechanical Engineering",
+    "userId": "1DS10ME881",
+    "password": "700293"
+  },
+  {
+    "firstName": "Winna",
+    "lastName": "MacDowal",
+    "email": "wmacdowal18@army.mil",
+    "semester": 3,
+    "department": "Mechanical Engineering",
+    "userId": "1DS19ME766",
+    "password": "671578"
+  },
+  {
+    "firstName": "Nikola",
+    "lastName": "Artus",
+    "email": "nartus19@unicef.org",
+    "semester": 2,
+    "department": "Electronics and Communication",
+    "userId": "1DS10EC300",
+    "password": "376594"
+  },
+  {
+    "firstName": "Jakob",
+    "lastName": "Jumont",
+    "email": "jjumont1a@stanford.edu",
+    "semester": 3,
+    "department": "Information Science",
+    "userId": "1DS17IS511",
+    "password": "462477"
+  },
+  {
+    "firstName": "Teddi",
+    "lastName": "Matthiae",
+    "email": "tmatthiae1b@devhub.com",
+    "semester": 1,
+    "department": "Electronics and Communication",
+    "userId": "1DS10EC586",
+    "password": "245627"
+  },
+  {
+    "firstName": "Sidonia",
+    "lastName": "Fish",
+    "email": "sfish1c@nydailynews.com",
+    "semester": 1,
+    "department": "Civil Engineering",
+    "userId": "1DS18CE919",
+    "password": "607357"
+  },
+  {
+    "firstName": "Dulcia",
+    "lastName": "Foston",
+    "email": "dfoston1d@seattletimes.com",
+    "semester": 4,
+    "department": "Computer Science",
+    "userId": "1DS10CS183",
+    "password": "591446"
+  },
+  {
+    "firstName": "Avigdor",
+    "lastName": "Agg",
+    "email": "aagg1e@is.gd",
+    "semester": 2,
+    "department": "Information Science",
+    "userId": "1DS14IS511",
+    "password": "686935"
+  },
+  {
+    "firstName": "Nolie",
+    "lastName": "Nesby",
+    "email": "nnesby1f@irs.gov",
+    "semester": 6,
+    "department": "Mechanical Engineering",
+    "userId": "1DS11ME139",
+    "password": "510590"
+  },
+  {
+    "firstName": "Percy",
+    "lastName": "Tathacott",
+    "email": "ptathacott1g@hp.com",
+    "semester": 7,
+    "department": "Civil Engineering",
+    "userId": "1DS11CE685",
+    "password": "304942"
+  },
+  {
+    "firstName": "Kendrick",
+    "lastName": "Daveran",
+    "email": "kdaveran1h@google.it",
+    "semester": 8,
+    "department": "Electronics and Communication",
+    "userId": "1DS11EC372",
+    "password": "315096"
+  },
+  {
+    "firstName": "Morey",
+    "lastName": "Lansley",
+    "email": "mlansley1i@chron.com",
+    "semester": 6,
+    "department": "Information Science",
+    "userId": "1DS15IS973",
+    "password": "176485"
+  },
+  {
+    "firstName": "Curr",
+    "lastName": "Walton",
+    "email": "cwalton1j@pbs.org",
+    "semester": 4,
+    "department": "Computer Science",
+    "userId": "1DS10CS283",
+    "password": "142140"
+  },
+  {
+    "firstName": "Nessie",
+    "lastName": "Ertelt",
+    "email": "nertelt1k@w3.org",
+    "semester": 1,
+    "department": "Electronics and Communication",
+    "userId": "1DS10EC499",
+    "password": "557900"
+  },
+  {
+    "firstName": "Ophelie",
+    "lastName": "Poad",
+    "email": "opoad1l@usgs.gov",
+    "semester": 6,
+    "department": "Electronics and Communication",
+    "userId": "1DS14EC259",
+    "password": "677814"
+  },
+  {
+    "firstName": "Andy",
+    "lastName": "Olivia",
+    "email": "aolivia1m@digg.com",
+    "semester": 3,
+    "department": "Electrical Engineering",
+    "userId": "1DS18EE689",
+    "password": "845875"
+  },
+  {
+    "firstName": "Janeta",
+    "lastName": "Stuckley",
+    "email": "jstuckley1n@freewebs.com",
+    "semester": 7,
+    "department": "Mechanical Engineering",
+    "userId": "1DS13ME977",
+    "password": "394706"
+  },
+  {
+    "firstName": "Cinderella",
+    "lastName": "Epilet",
+    "email": "cepilet1o@mashable.com",
+    "semester": 5,
+    "department": "Civil Engineering",
+    "userId": "1DS13CE728",
+    "password": "444690"
+  },
+  {
+    "firstName": "Ariana",
+    "lastName": "Bradberry",
+    "email": "abradberry1p@dailymail.co.uk",
+    "semester": 5,
+    "department": "Electrical Engineering",
+    "userId": "1DS18EE610",
+    "password": "395382"
+  },
+  {
+    "firstName": "Margarethe",
+    "lastName": "Paolozzi",
+    "email": "mpaolozzi1q@diigo.com",
+    "semester": 2,
+    "department": "Civil Engineering",
+    "userId": "1DS12CE431",
+    "password": "250603"
+  },
+  {
+    "firstName": "Norman",
+    "lastName": "Kulvear",
+    "email": "nkulvear1r@google.co.uk",
+    "semester": 5,
+    "department": "Information Science",
+    "userId": "1DS15IS650",
+    "password": "792508"
+  },
+  {
+    "firstName": "Truda",
+    "lastName": "Ahmad",
+    "email": "tahmad1s@blogtalkradio.com",
+    "semester": 5,
+    "department": "Computer Science",
+    "userId": "1DS13CS740",
+    "password": "646063"
+  },
+  {
+    "firstName": "Janie",
+    "lastName": "Freegard",
+    "email": "jfreegard1t@mysql.com",
+    "semester": 4,
+    "department": "Electrical Engineering",
+    "userId": "1DS13EE113",
+    "password": "966941"
+  },
+  {
+    "firstName": "Darby",
+    "lastName": "Orr",
+    "email": "dorr1u@amazon.co.jp",
+    "semester": 6,
+    "department": "Mechanical Engineering",
+    "userId": "1DS17ME485",
+    "password": "282164"
+  },
+  {
+    "firstName": "Steffane",
+    "lastName": "Melonby",
+    "email": "smelonby1v@issuu.com",
+    "semester": 3,
+    "department": "Mechanical Engineering",
+    "userId": "1DS11ME165",
+    "password": "941796"
+  },
+  {
+    "firstName": "Verile",
+    "lastName": "Bote",
+    "email": "vbote1w@g.co",
+    "semester": 3,
+    "department": "Electronics and Communication",
+    "userId": "1DS19EC306",
+    "password": "349924"
+  },
+  {
+    "firstName": "Kari",
+    "lastName": "Frankton",
+    "email": "kfrankton1x@eepurl.com",
+    "semester": 3,
+    "department": "Electrical Engineering",
+    "userId": "1DS18EE707",
+    "password": "677090"
+  },
+  {
+    "firstName": "Alan",
+    "lastName": "Caulder",
+    "email": "acaulder1y@360.cn",
+    "semester": 7,
+    "department": "Electronics and Communication",
+    "userId": "1DS14EC264",
+    "password": "802062"
+  },
+  {
+    "firstName": "Kylen",
+    "lastName": "Cleeves",
+    "email": "kcleeves1z@mac.com",
+    "semester": 3,
+    "department": "Mechanical Engineering",
+    "userId": "1DS16ME596",
+    "password": "429357"
+  },
+  {
+    "firstName": "Wyn",
+    "lastName": "Cudby",
+    "email": "wcudby20@hubpages.com",
+    "semester": 3,
+    "department": "Civil Engineering",
+    "userId": "1DS19CE205",
+    "password": "174765"
+  },
+  {
+    "firstName": "Itch",
+    "lastName": "Dutnall",
+    "email": "idutnall21@ca.gov",
+    "semester": 2,
+    "department": "Civil Engineering",
+    "userId": "1DS16CE390",
+    "password": "649700"
+  },
+  {
+    "firstName": "Donelle",
+    "lastName": "Sawkins",
+    "email": "dsawkins22@yahoo.com",
+    "semester": 7,
+    "department": "Electrical Engineering",
+    "userId": "1DS15EE568",
+    "password": "861066"
+  },
+  {
+    "firstName": "Carmelle",
+    "lastName": "Mutton",
+    "email": "cmutton23@cbc.ca",
+    "semester": 1,
+    "department": "Information Science",
+    "userId": "1DS17IS958",
+    "password": "689569"
+  },
+  {
+    "firstName": "Banky",
+    "lastName": "Bonus",
+    "email": "bbonus24@hexun.com",
+    "semester": 7,
+    "department": "Electrical Engineering",
+    "userId": "1DS13EE528",
+    "password": "624170"
+  },
+  {
+    "firstName": "Rickard",
+    "lastName": "Miroy",
+    "email": "rmiroy25@zdnet.com",
+    "semester": 8,
+    "department": "Computer Science",
+    "userId": "1DS16CS778",
+    "password": "127408"
+  },
+  {
+    "firstName": "Robby",
+    "lastName": "Petrasso",
+    "email": "rpetrasso26@sfgate.com",
+    "semester": 3,
+    "department": "Electronics and Communication",
+    "userId": "1DS15EC750",
+    "password": "704788"
+  },
+  {
+    "firstName": "Joellen",
+    "lastName": "Aleksic",
+    "email": "jaleksic27@alibaba.com",
+    "semester": 8,
+    "department": "Electrical Engineering",
+    "userId": "1DS11EE706",
+    "password": "717286"
+  },
+  {
+    "firstName": "Yorker",
+    "lastName": "Brosi",
+    "email": "ybrosi28@nba.com",
+    "semester": 2,
+    "department": "Electronics and Communication",
+    "userId": "1DS15EC833",
+    "password": "998027"
+  },
+  {
+    "firstName": "Verney",
+    "lastName": "Dublin",
+    "email": "vdublin29@comcast.net",
+    "semester": 8,
+    "department": "Electronics and Communication",
+    "userId": "1DS14EC434",
+    "password": "780940"
+  },
+  {
+    "firstName": "Vanya",
+    "lastName": "Dyneley",
+    "email": "vdyneley2a@indiatimes.com",
+    "semester": 7,
+    "department": "Mechanical Engineering",
+    "userId": "1DS16ME554",
+    "password": "308770"
+  },
+  {
+    "firstName": "Louella",
+    "lastName": "Harbin",
+    "email": "lharbin2b@hao123.com",
+    "semester": 4,
+    "department": "Information Science",
+    "userId": "1DS12IS385",
+    "password": "954455"
+  },
+  {
+    "firstName": "Ella",
+    "lastName": "Monroe",
+    "email": "emonroe2c@google.co.jp",
+    "semester": 5,
+    "department": "Information Science",
+    "userId": "1DS10IS666",
+    "password": "318728"
+  },
+  {
+    "firstName": "Mitchell",
+    "lastName": "Halversen",
+    "email": "mhalversen2d@tiny.cc",
+    "semester": 1,
+    "department": "Mechanical Engineering",
+    "userId": "1DS18ME143",
+    "password": "262444"
+  },
+  {
+    "firstName": "Blakelee",
+    "lastName": "Baumber",
+    "email": "bbaumber2e@nhs.uk",
+    "semester": 5,
+    "department": "Mechanical Engineering",
+    "userId": "1DS12ME328",
+    "password": "383267"
+  },
+  {
+    "firstName": "Stevie",
+    "lastName": "Van Leeuwen",
+    "email": "svanleeuwen2f@acquirethisname.com",
+    "semester": 2,
+    "department": "Computer Science",
+    "userId": "1DS13CS182",
+    "password": "530616"
+  },
+  {
+    "firstName": "Abra",
+    "lastName": "Croley",
+    "email": "acroley2g@twitter.com",
+    "semester": 6,
+    "department": "Information Science",
+    "userId": "1DS19IS291",
+    "password": "385590"
+  },
+  {
+    "firstName": "Moritz",
+    "lastName": "Biesty",
+    "email": "mbiesty2h@smugmug.com",
+    "semester": 4,
+    "department": "Mechanical Engineering",
+    "userId": "1DS13ME900",
+    "password": "189942"
+  },
+  {
+    "firstName": "Thayne",
+    "lastName": "Trippitt",
+    "email": "ttrippitt2i@answers.com",
+    "semester": 8,
+    "department": "Electrical Engineering",
+    "userId": "1DS17EE624",
+    "password": "246360"
+  },
+  {
+    "firstName": "Lucia",
+    "lastName": "Bartholomaus",
+    "email": "lbartholomaus2j@webmd.com",
+    "semester": 7,
+    "department": "Electronics and Communication",
+    "userId": "1DS12EC995",
+    "password": "126392"
+  },
+  {
+    "firstName": "Beniamino",
+    "lastName": "Soff",
+    "email": "bsoff2k@blogspot.com",
+    "semester": 7,
+    "department": "Computer Science",
+    "userId": "1DS15CS248",
+    "password": "664461"
+  },
+  {
+    "firstName": "Greggory",
+    "lastName": "Stanyard",
+    "email": "gstanyard2l@hp.com",
+    "semester": 6,
+    "department": "Mechanical Engineering",
+    "userId": "1DS17ME338",
+    "password": "103854"
+  },
+  {
+    "firstName": "Clemmie",
+    "lastName": "Simionato",
+    "email": "csimionato2m@nature.com",
+    "semester": 4,
+    "department": "Computer Science",
+    "userId": "1DS16CS280",
+    "password": "524246"
+  },
+  {
+    "firstName": "Chris",
+    "lastName": "Gimbrett",
+    "email": "cgimbrett2n@xrea.com",
+    "semester": 6,
+    "department": "Electronics and Communication",
+    "userId": "1DS15EC439",
+    "password": "599600"
+  },
+  {
+    "firstName": "Kendall",
+    "lastName": "Blakelock",
+    "email": "kblakelock2o@booking.com",
+    "semester": 2,
+    "department": "Electronics and Communication",
+    "userId": "1DS17EC137",
+    "password": "526300"
+  },
+  {
+    "firstName": "Milty",
+    "lastName": "Pancoast",
+    "email": "mpancoast2p@newsvine.com",
+    "semester": 7,
+    "department": "Mechanical Engineering",
+    "userId": "1DS19ME416",
+    "password": "186671"
+  },
+  {
+    "firstName": "Emmeline",
+    "lastName": "Palfrey",
+    "email": "epalfrey2q@sphinn.com",
+    "semester": 3,
+    "department": "Information Science",
+    "userId": "1DS10IS454",
+    "password": "466048"
+  },
+  {
+    "firstName": "Alexina",
+    "lastName": "De Bischof",
+    "email": "adebischof2r@desdev.cn",
+    "semester": 6,
+    "department": "Mechanical Engineering",
+    "userId": "1DS18ME700",
+    "password": "405933"
+  }
+]
