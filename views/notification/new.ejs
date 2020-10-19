@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Notifications</title>
+    <% include ../partials/head.ejs %> 
+    <script src="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/js/medium-editor.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="/stylesheets/beagle.min.css">
+</head>
+
+<body>
+  
+<% include ../partials/navbar.ejs %> 
+    <div class="container-fluid container-fluid-row">
+        <div class="row container-row">
+            <% include ../partials/sidebar.ejs %> 
+            <main role="main" class="col-md-9 ml-sm-auto pt-3 px-4 m-0">
+                <!--Used to push flash messages, like 'passwords don't match' and other validation-->
+                <br>
+                <% include ../partials/messages %>
+                <br>
+
+                <form action="/notification/" method="POST">
+                    <div class="row align-items-end">
+                        <button class="col-md-2 btn add-notification-btn ml-md-auto mb-3" type="submit"><i class="fas fa-bullhorn pr-2"></i>Post Notification</button>
+                </div>
+                    <div class="new-announcement">
+                        <textarea class="editable title-editable text-center" name="title" id="title">
+                        </textarea>
+                        <select class="custom-select col-md-4 my-2" name="level" id="level">
+                            <option selected>Select the notification level</option>
+                            <% options.forEach(option => { %>
+                                <option value="<%= option %>"><%= option %></option>
+                            <% }) %>
+                           
+                          </select>
+                       <textarea class="editable medium-editor-textarea" name="body" id="body">
+                        </textarea>
+                    </div>
+                  
+                </form>
+        </div>
+        </main>
+
+    </div>
+    </div>
+    <script>
+    var editor = new MediumEditor('.title-editable',{placeholder:{text:"Type the title of your notification"}});
+    var bodyEditor = new MediumEditor('.medium-editor-textarea',{placeholder:{text:"Type the body of your notification"}});
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

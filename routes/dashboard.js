@@ -16,7 +16,7 @@ router.get("/college-notifications", (req, res) => {
 router.get("/notifications", (req, res) => {
   Notification.find(
     {
-      level: "college",
+      level: "College",
     },
     (err, notifications) => {
       //console.log(users);
@@ -40,7 +40,7 @@ router.get("/about-us", (req, res) => {
 router.get("/department-notifications", (req, res) => {
   Notification.find(
     {
-      level: "department",
+      level: req.user.department,
     },
     (err, notifications) => {
       //console.log(users);
@@ -88,6 +88,8 @@ router.get("/notifications/:id", function (req, res) {
         console.log(foundNotification);
         res.render("show", {
           notification: foundNotification,
+          user: req.user,
+          page: "detail-view",
         });
       }
     });

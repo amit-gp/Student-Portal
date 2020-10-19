@@ -24,6 +24,14 @@ const notificationSchema = new Schema({
       ref: "Comment",
     },
   ],
+  author: {
+    id: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+    },
+    firstName: String,
+    lastName: String,
+  },
   createdAt: {
     type: Date,
     default: Date.now,

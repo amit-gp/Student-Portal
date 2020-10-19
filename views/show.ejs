@@ -18,10 +18,18 @@
                         class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-1 mb-2 border-bottom">
                         
                     </div> -->
-            <h3 class="card-title text-center py-2 border-bottom">
-              <%=notification.title%>
+            <h3
+              class="card-title text-center pt-4 border-bottom notification-heading"
+            >
+              <%-notification.title%>
+              <div class="text-right author-name pr-4 pb-2">
+                <%=notification.author.firstName%> <%=
+                notification.author.lastName %>
+              </div>
             </h3>
-            <p class="card-body"><%=notification.body%></p>
+            <div class="card-body font-pt-serif">
+              <div class="p-1"><%-notification.body%></div>
+            </div>
             <div class="card-footer text-muted text-right">
               Posted: <%= moment(notification.createdAt).fromNow() %>
             </div>
