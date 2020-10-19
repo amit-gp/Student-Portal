@@ -6,6 +6,7 @@ const indexRoutes = require("./routes/index");
 const userRoutes = require("./routes/users");
 const dashboardRoutes = require("./routes/dashboard");
 const commentRoutes = require("./routes/comment");
+const notificationRoutes = require("./routes/notification");
 // const expressLayouts = require('express-ejs-layouts');
 const expressSession = require("express-session");
 const flash = require("connect-flash");
@@ -96,6 +97,7 @@ app.use(function (req, res, next) {
 app.use("/", indexRoutes);
 app.use("/dashboard", ensureAuthenticated, dashboardRoutes);
 app.use("/dashboard/notifications/:id/comments", commentRoutes);
+app.use("/notification", notificationRoutes);
 app.use("/users", userRoutes);
 
 // catch 404 and forward to error handler

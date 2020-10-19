@@ -99,3 +99,48 @@ hr {
   color: #ebecf1;
   font-weight: bold !important;
 }
+
+.new-announcement {
+  background-color: white;
+  padding: 1rem;
+}
+
+.new-announcement .title-editable {
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+}
+
+.new-announcement .medium-editor-textarea {
+  font-family: "PT Serif", serif;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  padding-bottom: 10rem;
+}
+
+.add-notification-btn {
+  background-color: #1f4068;
+  color: white;
+  border: none;
+}
+
+.add-notification-btn:hover {
+  background-color: #1f4068e1;
+  border: none;
+}
+
+.author-name {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.font-pt-serif {
+  font-family: "PT Serif", serif;
+  font-size: 1.5rem;
+}
+
+.notification-heading {
+  font-size: 3rem;
+  font-weight: bold;
+}

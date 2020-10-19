@@ -18,33 +18,26 @@
                 <br>
                 <% include ./partials/messages %>
                 <br>
+                <% if (user.isStaff) { %>
+                    <div class="row align-items-end">
+                        <a href="/notification/new" class="col-md-2 btn btn-success add-notification-btn ml-md-auto mb-3"> <i class="fas fa-plus-circle pr-2"></i>New Notification</a>
+                    </div>
+                <% } %>
                 
-
+               
                 <% notificationList.forEach(notification => { %>
                 <div class="card">
                     <div class="card-header">Posted: <%= moment(notification.createdAt).fromNow() %></div>
                     <div class="p-4">
-                        <h5 class="card-title"><%= notification.title %> </h5>
-                        <p class="card-text"><%= notification.body.substring(0,300) %>...</p>
+                        <h5 class="card-title"><%- notification.title %> </h5>
+                        <p class="card-text"><%- notification.body.substring(0,300) %>...</p>
                         <a href="/dashboard/notifications/<%= notification._id%>" class="btn btn-dark read-more-btn">Read
                             More</a>
                     </div>
                     </div>
-                   
+                </div>  
                 <% }); %>
-                <!--
-            TEMPLATE
-            <div class="card p-3">
-            <h5 class="card-title">Notification - 1</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nam nihil quae ut, dolore
-                modi nobis
-                tempora et dignissimos assumenda voluptate pariatur provident quod nemo reprehenderit quisquam est
-                perspiciatis architecto quidem, beatae enim possimus excepturi. Alias, facilis! Et omnis at, nulla
-                tenetur numquam laborum aliquam accusamus esse fuga possimus quis.</p>
-            <a href="#" class="btn btn-dark read-more-btn">Read More</a>
-        </div>
-        -->
-        </div>
+                
         </main>
 
     </div>
