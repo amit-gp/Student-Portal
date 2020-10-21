@@ -144,3 +144,28 @@ hr {
   font-size: 3rem;
   font-weight: bold;
 }
+
+.upload-information {
+  font-size: 1.2rem;
+}
+
+.btn-green {
+  background-color: #206a5d;
+  color: white;
+  cursor: default;
+}
+
+.github-icon {
+  color: #333;
+}
+
+.github-icon:hover {
+  color: rgb(0, 0, 0);
+}
+
+.linkedin-icon {
+  color: black;
+}
+.linkedin-icon:hover {
+  color: #1f4068;
+}

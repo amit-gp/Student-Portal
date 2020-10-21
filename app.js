@@ -7,6 +7,7 @@ const userRoutes = require("./routes/users");
 const dashboardRoutes = require("./routes/dashboard");
 const commentRoutes = require("./routes/comment");
 const notificationRoutes = require("./routes/notification");
+const resultRoutes = require("./routes/results");
 // const expressLayouts = require('express-ejs-layouts');
 const expressSession = require("express-session");
 const flash = require("connect-flash");
@@ -98,6 +99,7 @@ app.use("/", indexRoutes);
 app.use("/dashboard", ensureAuthenticated, dashboardRoutes);
 app.use("/dashboard/notifications/:id/comments", commentRoutes);
 app.use("/notification", notificationRoutes);
+app.use("/results", resultRoutes);
 app.use("/users", userRoutes);
 
 // catch 404 and forward to error handler
@@ -115,7 +117,7 @@ app.use(function (err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  console.log(err);
+  res.render("error");
 });
 
 app.listen(
