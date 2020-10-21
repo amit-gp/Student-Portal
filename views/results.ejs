@@ -30,61 +30,77 @@
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
                     <h1 class="h2">Results</h1>
                 </div>
-                <table class="table table-striped table-dark" id="marks-table">
-                    <thead>
+                <% include ./partials/messages %>
+                <% if (user.isStaff) { %>
+                    <div>
+                       
+                        <form action="/results/upload" class="form-inline px-3 upload-information" method="post" encType="multipart/form-data">
+                              <div class="row justify-content-md-center mt-3">
+                                 
+                                <div class="form-group">
+                                    <label for="resultsFile">Result File:</label>
+                                    <div class="px-1 mx-1"></div>
+                                    <input type="file" class="btn btn-green mr-3" name="resultsFile" id="resultsFile"/>
+                                </div>    
+                                <button class="btn add-notification-btn" type="submit"><i class="fa fa-upload pr-2" aria-hidden="true"></i>Upload Result</button>
+                            </div>
+                             
+                           
+                        </form>
+                        <div class="upload-information mt-5">
+                            <div class="card">
+                                <div class="card-header">
+                                    Please note:
+                                </div>
+                                <div class="card-body">
+                                        <ol class="card-text">
+                                            <li>The result has to be uploaded through a csv file</li>
+                                            <li>The subject names must be included in the first row</li>
+                                            <li>Only the student's USN and marks must be included</li>
+                                            <li>The marks must be out of 10.</li>
+                                            <li>Download the template for your reference</li>
+                                        </ol>
+                                        <a href="/results/download-template" class="btn btn-secondary"><i class="fa fa-download pr-2" aria-hidden="true"></i>Download Template</a>
+                                </div>
+                            </div>
+                            
+                          
+                          
+                        </div>
+                       
+                    </div>
+                
+               <% } else { %>
+                
+                <% if (!result) { %>
+                 <div class="alert alert-info"role="alert">Your result hasn't been uploaded yet.</div>
+               
+                <% } else { %>
+ 
+                <table class="table table-bordered table-hover text-center upload-information" id="marks-table">
+                    <thead class="thead-dark">
                         <tr>
                             <th scope="col">Sl No</th>
-                            <th scope="col">Course Code</th>
                             <th scope="col">Course</th>
                             <th scope="col">Grade</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <% result.subjects.forEach((entity,index) => { %>
                         <tr>
-                            <th scope="row">1</th>
-                            <td>CS61</td>
-                            <td>Internet and Web Technology</td>
-                            <td>8</td>
+                            <th scope="row"><%= index+1 %> </th>
+                            <td><%= entity.subject %> </td>
+                            <td><%= entity.marks %></td>
                         </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>CS62</td>
-                            <td>Complier Design</td>
-                            <td>8</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>CS63</td>
-                            <td>Computer Graphics</td>
-                            <td>8</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>CS64</td>
-                            <td>Cloud and Big Data</td>
-                            <td>8</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>CS65</td>
-                            <td>Software Architecture and Design Patterns</td>
-                            <td>8</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">6</th>
-                            <td>CS66</td>
-                            <td>Software Testing</td>
-                            <td>8</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" colspan="4" class="sgpa"></th>
-                        </tr>
-                        <tr>
-                            <th scope="row" colspan="3" class="sgpa">SGPA</th>
-                            <td id="sgpa">8</td>
+                        <% }) %>
+                        <tr class="bg-success text-white">
+                            <th scope="row" colspan="2" class="sgpa">SGPA</th>
+                            <td id="sgpa"><%= result.cgpa %></td>
                         </tr>
                     </tbody>
                 </table>
+                <% } %>
+                <% } %>
             </main>
         </div>
         </main>

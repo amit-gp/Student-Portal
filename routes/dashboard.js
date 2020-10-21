@@ -29,10 +29,6 @@ router.get("/notifications", (req, res) => {
   );
 });
 
-router.get("/results", (req, res) => {
-  res.render("results", { user: req.user, page: "results" });
-});
-
 router.get("/about-us", (req, res) => {
   res.render("about-us", { user: req.user, page: "about-us" });
 });

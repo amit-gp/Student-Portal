@@ -32,6 +32,12 @@
               <th>Email address</th>
               <td><%= user.email %></td>
             </tr>
+            <% if (user.isStaff) { %>
+            <tr>
+              <th>Staff ID</th>
+              <td><%= user.userId %></td>
+            </tr>
+            <% } else { %>
             <tr>
               <th>USN</th>
               <td><%= user.userId %></td>
@@ -40,6 +46,7 @@
               <th>Semester</th>
               <td><%= user.semester %></td>
             </tr>
+            <% } %>
             <tr class="border-bottom">
               <th>Department</th>
               <td><%= user.department %></td>
